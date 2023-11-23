@@ -26,7 +26,7 @@ span{color: #05b4ff;}
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background: rgb(137 137 137 / 50%);
+    background: rgb(81 81 81 / 99%);
 	padding: 5px 5px 5px 20px;
     border-bottom: 1px solid transparent;
     transition: all .45s ease;
