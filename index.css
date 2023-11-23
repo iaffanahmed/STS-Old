@@ -235,6 +235,7 @@ padding: 0 50px 0 0;
 /* ---------------------------------HOME PAGE */
 .home{
 	content: '';
+	height: 100vh;
 	/* position: sticky; */
 	display: flex;
 	width: 100%;
