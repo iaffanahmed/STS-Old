@@ -11,8 +11,17 @@
 }
 body{
 	background: #2A2A2A;
+	/* padding: 0 15% 0 15%; */
 	color: #c3c3c3;
-	/* width: 100%; */
+	
+	display: grid;
+    max-width: 1500px;
+    justify-content: center;
+    width: 100%;
+    float: none;
+    min-width: 1482px;
+    margin: auto;
+	    overflow-x: hidden;
  
 }
 span{color: #05b4ff;}
@@ -20,13 +29,15 @@ span{color: #05b4ff;}
 
 .navbar {
 	z-index: 1000;
-    display: flex;
-	width: 100%;
-	width: 100%;
+    display: grid;
+	/* width: 100%; */
+	/* max-width: 2300px; */
+	/* width: 100%; */
     top: 0;
     right: 0;
+	left: 0;
     position: fixed;
-    justify-content: space-between;
+	justify-content: center;
     align-items: center;
     background-color: rgb(81 81 81 / 99%);
     color: white;
@@ -92,7 +103,7 @@ font-weight: bold;
     border-radius: 10px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     .navbar {
 		
         flex-direction: column;
@@ -135,29 +146,6 @@ padding: 0 50px 0 0;
 		
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -235,19 +223,26 @@ padding: 0 50px 0 0;
 /* ---------------------------------HOME PAGE */
 .home{
 	content: '';
-	height: 100vh;
 	/* position: sticky; */
-	display: flex;
-	width: 100%;
-	flex-wrap: wrap;
+	/* float: center; */
+	/* display: flex; */
+	/* flex-wrap: wrap; */
 	flex-direction: row;
-	height: 800px;
+	height: 100vh;
 	justify-content: flex-start;
     align-content: center;
 	align-items: center;
-	padding: 0 0 0 120px;
+	padding: 0 0 0 0px;
 	/* background-color: transparent; */
 	background: url('16406291_rm373batch2-04.jpg') center / cover no-repeat fixed;	
+	
+	display: grid;
+    max-width: 1500px;
+    justify-content: flex-start;
+    width: 100%;
+    float: none;
+    min-width: 1482px;
+    margin: auto;
 }
 .home-text{
 	display: flex;
@@ -255,6 +250,7 @@ padding: 0 50px 0 0;
     align-items: center;
 	flex-direction: column;
 	align-items: flex-start;
+	padding-left: 100px;
 }
 .home-text h3 {
     color: #fff;
@@ -311,7 +307,18 @@ padding: 0 50px 0 0;
 	/* height: 600px; */
 	/* background-image: linear-gradient(to bottom,#F6F6F6, #FFD048); */
 	background:url(dark.png) center / cover no-repeat fixed;
-		width: 100%;
+		justify-content: center;
+    align-content: center;
+	align-items: center;
+	
+	display: grid;
+    max-width: 1500px;
+    justify-content: center;
+    width: 100%;
+    float: none;
+    min-width: 1482px;
+    margin: auto;
+
 }
 .sec-heading1{
 	text-align: center;
@@ -475,6 +482,9 @@ animation: rotation 60s infinite;
 	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
 
 }
+.stat-img{
+	    padding: 0 50px 0 50px;
+}
 .icons{
 	transition: all 0.45s;
 	opacity: 40%;
@@ -520,7 +530,14 @@ animation: rotation 60s infinite;
 	/* background-image: linear-gradient(to bottom,#F6F6F6, #FFD048); */
 	/* background:url(doctor.jpg) center / cover no-repeat fixed; */
 	/* margin-bottom: 200px; */
-	width: 100%;
+	
+	display: grid;
+    max-width: 1500px;
+    justify-content: center;
+    width: 100%;
+    float: none;
+    min-width: 1482px;
+    margin: auto;
 	
 }
 .sec-heading3{
@@ -547,18 +564,20 @@ animation: rotation 60s infinite;
     align-items: center;
 	padding: 0 0 70px 0;
 	overflow: hidden;
+	width: 1250px;
 }
 .projects{
 	height: 250px;
-	width: 413px;
+	width: 400px;
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
+	margin-bottom: 10px;
 }
 .projects img {
     height: 250px;
-	width: 413px;
+	width: 400px;
     border-radius: 8px;
     display: block;
     transition: transform 0.5s;
@@ -831,19 +850,19 @@ input[type="radio"] {
     /* z-index: 1000; */
 }
 .btn:nth-of-type(1) {
-    left: 42%;
+    left: 38%;
 }
 
 .btn:nth-of-type(2) {
-    left: 46%;
+    left: 45%;
 }
 
 .btn:nth-of-type(3) {
-    left: 50%;
+    left: 52%;
 }
 
 .btn:nth-of-type(4) {
-    left: 54%;
+    left: 59%;
 }
 
 .btn:hover {
@@ -943,6 +962,12 @@ input[type="radio"]:checked+label.btn::after {
 	align-items: center;
     justify-content: space-evenly;
 	
+    max-width: 1500px;
+    /* justify-content: center; */
+    width: 100%;
+    float: none;
+    min-width: 1482px;
+    margin: auto;
 }
 .contact-text h4 {
     color: #fff;
